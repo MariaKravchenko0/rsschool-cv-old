@@ -26,6 +26,20 @@ _Discord: Maria (@MariaKravchenko0)_
 - HTML Basics
 - CSS Basics
 
+## CODE EXAMPLE
+
+```
+// return masked string
+function maskify(cc) {
+    if (cc.length <= 4) {
+        return cc;
+    } else {
+        let openChars = cc.slice(-4);
+        return openChars.padStart(cc.length, "#");
+    }
+}
+```
+
 ## LANGUAGES
 
 - Russian, Ukrainian – native
