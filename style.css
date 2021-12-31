@@ -7,9 +7,11 @@
   --main-light: #f7ebe8;
   --text-color: #6d3b47;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,12 +23,14 @@ body {
   padding: 0;
   font-family: "Noto Sans", sans-serif;
 }
+
 .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   min-height: 50px;
 }
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -34,29 +38,33 @@ body {
   height: auto;
   background-color: var(--main-dark);
 }
+
 .nav {
   margin: 0 25px;
 }
+
 .nav-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   padding-left: 0;
 }
+
 .nav-link {
   position: relative;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 10px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 3px;
-  line-height: 20px;
+  line-height: 25px;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.5s;
   color: #fff;
 }
+
 .nav-link:hover {
   color: var(--text-color);
 }
@@ -66,31 +74,38 @@ body {
   flex-direction: row;
   max-width: 1100px;
 }
+
 .column {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-content: center;
   padding: 25px;
   margin: 10px;
 }
+
 .overview-column {
   background-color: var(--main-light);
 }
+
 .main-column {
   margin-top: 50px;
 }
+
 .profile {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  position: relative;
+  padding: 0 10px;
   margin: 0 40px 50px;
 }
+
 .photo {
-  width: 182px;
-  height: 243px;
   margin: auto;
-  border-radius: 10%;
+  border-radius: 15%;
 }
+
 h1 {
   position: relative;
   padding: 0 5px;
@@ -102,6 +117,7 @@ h1 {
   word-spacing: 5px;
   color: var(--text-color);
 }
+
 h2 {
   position: relative;
   text-align: center;
@@ -112,9 +128,11 @@ h2 {
   word-spacing: 3px;
   color: var(--text-color);
 }
+
 .main-column-section-title {
   border-bottom: 10px solid var(--main-light);
 }
+
 .subtitle {
   position: relative;
   font-size: 20px;
@@ -123,6 +141,7 @@ h2 {
   word-spacing: 2px;
   color: var(--text-color);
 }
+
 .section {
   position: relative;
   padding: 0 10px;
@@ -132,27 +151,46 @@ h2 {
   line-height: 1.5;
   color: var(--text-color);
 }
+
 .section-link {
   text-decoration: none;
   transition: color 0.3s;
   color: var(--text-color);
 }
+
 .section-link:hover {
   color: var(--main-dark);
 }
-span {
+
+.education-period {
   color: var(--main-dark);
 }
+
+.contact-list {
+  padding-left: 15px;
+}
+
+.contact {
+  font-weight: 600;
+}
+
+.section-contact-list-item {
+  list-style: none;
+}
+
 .code {
   display: flex;
   justify-content: center;
 }
+
 .my-project {
   text-align: center;
 }
+
 .footer {
   background-color: var(--main-dark);
 }
+
 .footer-container {
   display: flex;
   flex-flow: row wrap;
@@ -160,6 +198,7 @@ span {
   justify-content: space-around;
   height: 125px;
 }
+
 #footer-year {
   width: 80px;
   font-size: 20px;
@@ -167,17 +206,8 @@ span {
   letter-spacing: 2px;
   color: #000;
 }
-#footer-github {
-  width: 32px;
-  height: 32px;
-}
-#footer-rsschool {
-  width: 100px;
-  height: 37px;
-}
+
 @media (max-width: 720px) {
-  .container {
-  }
   .main-container {
     flex-direction: column;
     align-content: center;
@@ -187,6 +217,7 @@ span {
   }
   .overview-column,
   .main-column {
+    justify-content: center;
     padding: 0;
     margin: 5px 0;
   }
@@ -196,6 +227,7 @@ span {
     padding: 0 5px;
   }
 }
+
 @media (max-width: 500px) {
   .nav-list {
     flex-direction: column;
