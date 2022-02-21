@@ -19,7 +19,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  font: 400 20px "Noto Sans", sans-serif;
+  font: 400 18px "Noto Sans", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
   color: var(--text-color);
 }
 
@@ -31,6 +33,11 @@ a {
 
 a:hover {
   color: var(--main-dark);
+}
+
+p,
+li {
+  margin: 18px 0;
 }
 
 .container {
@@ -113,7 +120,6 @@ a:hover {
 
 .main-container {
   justify-content: flex-start;
-  max-width: 1024px;
 }
 
 .column {
@@ -125,12 +131,12 @@ a:hover {
 }
 
 .overview-column {
-  max-width: 400px;
+  max-width: 425px;
   background-color: var(--main-light);
 }
 
 .main-column {
-  max-width: 600;
+  max-width: 768px;
   margin-top: 60px;
 }
 
