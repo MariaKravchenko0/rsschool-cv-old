@@ -24,7 +24,7 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contacts" class="nav-link">Contacts</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -60,9 +60,9 @@
             <h1>Maria Kravchenko</h1>
             <img src="assets/avatar.jpg" alt="Photo" class="photo" />
           </section>
-          <section class="section" id="contact">
-            <h2 class="section-title">Contact</h2>
-            <ul class="contact-list">
+          <section class="section contacts" id="contact">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="contacts-list">
               <li>
                 <a href="mailto:kravchenkomaria00@gmail.com">
                   <i class="fa-solid fa-envelope"></i>
@@ -98,7 +98,7 @@
           </section>
         </div>
         <div class="column main-column">
-          <section class="section" id="about">
+          <section class="section main-column-section" id="about">
             <h2 class="main-column-section-title">About</h2>
             <div class="about">
               <p>
@@ -120,14 +120,14 @@
               </p>
             </div>
           </section>
-          <section class="section" id="education">
+          <section class="section main-column-section" id="education">
             <h2 class="main-column-section-title">Education</h2>
-            <ul>
+            <ul class="section-list">
               <li>
                 <h3>
                   Donetsk National University, Faculty of Foreign Languages
                 </h3>
-                <ul class="section-list">
+                <ul>
                   <li>
                     Bachelor of Linguistics and Teaching<br />
                     <span class="education-period">2017 – 2021</span>
@@ -143,7 +143,7 @@
               </li>
               <li>
                 <h3>Courses</h3>
-                <ul class="section-list">
+                <ul>
                   <li>
                     The Rolling Scopes School Course
                     <a href="https://rs.school/js-stage0/"
@@ -162,21 +162,26 @@
               </li>
             </ul>
           </section>
-          <section class="section" id="code">
+          <section class="section main-column-section" id="code">
             <h2 class="main-column-section-title">Code</h2>
             <pre class="code"><code>
-function repeatStr (n, s) {
-  let result = '';
-  let i = 1;              
-  while (i &lt;= n) {
-    result = `${result}${s}`;
-    i += 1;
-  }                 
-  return result;
-};
+function rgb(r, g, b){
+
+  function convert(num) {
+    if (num &lt;= 0) {
+      return '00';
+    } else if (num >= 255) {
+      return 'FF';
+    } else {
+      return num.toString(16).toUpperCase().padStart(2, '0');
+    }
+  }
+               
+  return  convert(r) + convert(g) + convert(b);
+}
           </code></pre>
           </section>
-          <section class="section" id="projects">
+          <section class="section main-column-section" id="projects">
             <h2 class="main-column-section-title">Projects</h2>
             <p class="my-project">
               <a href="https://MariaKravchenko0.github.io/rsschool-cv/"
