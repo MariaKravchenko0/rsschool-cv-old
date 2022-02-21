@@ -36,7 +36,7 @@ a:hover {
 
 p,
 li {
-  margin: 18px 0;
+  margin: 20px 0;
 }
 
 .container {
@@ -152,7 +152,7 @@ li {
   width: 182px;
   height: 243px;
   margin: 20px auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 h1,
@@ -181,8 +181,11 @@ h2 {
 }
 
 .section-list {
-  padding-left: 25px;
   list-style: none;
+}
+
+.section-list > li > ul {
+  padding-left: 25px;
 }
 
 .education-period {
@@ -192,6 +195,7 @@ h2 {
 .code {
   display: block;
   overflow-x: auto;
+  font-size: 14px;
 }
 
 .projects-list {
