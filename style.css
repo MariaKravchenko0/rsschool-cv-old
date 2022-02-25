@@ -1,7 +1,8 @@
 :root {
   --main-dark: #bcaa99;
   --main-light: #f7ebe8;
-  --text-color: #6d3b47;
+  --text-color: rgb(109, 59, 71);
+  --grey-color: #eee6e4;
 }
 
 * {
@@ -196,14 +197,65 @@ h2 {
   display: block;
   overflow-x: auto;
   font-size: 14px;
+  background-color: var(--grey-color);
 }
 
-.projects-list {
-  list-style: none;
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.my-project {
+.project {
+  position: relative;
+  width: 384px;
+  height: 216px;
+  margin: 0 10px 10px;
   text-align: center;
+}
+
+.project > a {
+  color: var(--main-light);
+}
+
+.portfolio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/img/portfolio.jpg");
+  background-size: cover;
+}
+
+.gallery {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/img/gallery.jpg");
+  background-size: cover;
+}
+
+.game {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/img/game.jpg");
+  background-size: cover;
+}
+
+.project-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(109, 59, 71, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-overlay:hover {
+  opacity: 1;
 }
 
 .footer {
@@ -219,8 +271,7 @@ h2 {
 .footer-item {
   display: flex;
   justify-content: center;
-  max-width: 100px;
-  width: auto;
+  width: 100px;
   color: var(--main-light);
   letter-spacing: 3px;
 }
@@ -297,5 +348,10 @@ h2 {
 
   .column {
     padding: 10px;
+  }
+
+  .project {
+    width: 300px;
+    height: 180px;
   }
 }

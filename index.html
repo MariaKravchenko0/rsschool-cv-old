@@ -64,13 +64,13 @@
             <h2 class="section-title">Contacts</h2>
             <ul class="contacts-list">
               <li>
-                <a href="mailto:kravchenkomaria00@gmail.com">
+                <a href="mailto:kravchenkomaria00@gmail.com" target="_blank">
                   <i class="fa-solid fa-envelope"></i>
                   kravchenkomaria00@gmail.com</a
                 >
               </li>
               <li>
-                <a href="https://t.me/MariaKravchenko0"
+                <a href="https://t.me/MariaKravchenko0" target="_blank"
                   ><i class="fa-solid fa-paper-plane"></i> MariaKravchenko0</a
                 >
               </li>
@@ -82,9 +82,10 @@
           <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
             <ul class="section-list">
-              <li class="section-list-item">HTML, CSS Basics</li>
-              <li class="section-list-item">GIT, GitHub</li>
+              <li class="section-list-item">HTML, CSS</li>
               <li class="section-list-item">JavaScript Basics</li>
+              <li class="section-list-item">GIT, GitHub</li>
+              <li class="section-list-item">Figma</li>
             </ul>
           </section>
           <section class="section" id="languages">
@@ -165,44 +166,62 @@
           <section class="section main-column-section" id="code">
             <h2 class="main-column-section-title">Code</h2>
             <pre class="code"><code>
-function rgb(r, g, b){
+  function rgb(r, g, b){
 
-  function convert(num) {
-    if (num &lt;= 0) {
-      return '00';
-    } else if (num >= 255) {
-      return 'FF';
-    } else {
-      return num.toString(16).toUpperCase().padStart(2, '0');
+    function convert(num) {
+      if (num &lt;= 0) {
+        return '00';
+      } else if (num >= 255) {
+        return 'FF';
+      } else {
+        return num.toString(16).toUpperCase().padStart(2, '0');
+      }
     }
-  }
                
-  return  convert(r) + convert(g) + convert(b);
-}
+    return  convert(r) + convert(g) + convert(b);
+  }
           </code></pre>
           </section>
           <section class="section main-column-section" id="projects">
             <h2 class="main-column-section-title">Projects</h2>
-            <ul class="projects-list">
-              <li class="my-project">
+            <div class="projects">
+              <div class="project">
                 <a
                   href="https://rolling-scopes-school.github.io/mariakravchenko0-JSFEPRESCHOOL/portfolio/"
-                  >Photographer's Portfolio</a
+                  target="_blank"
                 >
-              </li>
-              <li class="my-project">
+                  <div class="portfolio"></div>
+                  <div class="project-overlay">
+                    <h3>Photographer's Portfolio</h3>
+                    <span>(HTML, CSS, JS)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="project">
                 <a
                   href="https://rolling-scopes-school.github.io/mariakravchenko0-JSFEPRESCHOOL/image-galery/"
-                  >Image Search</a
+                  target="_blank"
                 >
-              </li>
-              <li class="my-project">
+                  <div class="gallery"></div>
+                  <div class="project-overlay">
+                    <h3>Image Gallery</h3>
+                    <span>(HTML, CSS, JS)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="project">
                 <a
                   href="https://rolling-scopes-school.github.io/mariakravchenko0-JSFEPRESCHOOL/memory-game/"
-                  >Memory Game</a
+                  target="_blank"
                 >
-              </li>
-            </ul>
+                  <div class="game"></div>
+                  <div class="project-overlay">
+                    <h3>Memory Game</h3>
+                    <span>(HTML, CSS, JS)</span>
+                  </div>
+                </a>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -211,14 +230,14 @@ function rgb(r, g, b){
       <div class="container footer-container">
         <div class="footer-item">©2021</div>
         <div class="footer-item">
-          <a href="https://github.com/MariaKravchenko0">
+          <a href="https://github.com/MariaKravchenko0" target="_blank">
             <svg class="github">
               <use xlink:href="assets/sprite.svg#github"></use>
             </svg>
           </a>
         </div>
         <div class="footer-item">
-          <a href="https://rs.school/js-stage0/">
+          <a href="https://rs.school/js-stage0/" target="_blank">
             <svg class="rsschool">
               <use xlink:href="assets/sprite.svg#rsschool"></use>
             </svg>
